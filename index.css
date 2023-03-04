@@ -1,0 +1,168 @@
+@keyframes go {
+  0% {
+    left: 0px;
+    top: 90px;
+  }
+  20% {
+    left: 250px;
+    top: 80px;
+  }
+  40% {
+    left: 350px;
+    top: 70px;
+  }
+  60% {
+    left: 450px;
+    top: 60px;
+  }
+  80% {
+    left: 550px;
+    top: 50px;
+  }
+  100% {
+    left: 650px;
+    top: 40px;
+  }
+}
+@keyframes come {
+  0% {
+    right: 0px;
+    top: 30px;
+  }
+  40% {
+    right: 200px;
+    top: 20px;
+  }
+  100% {
+    right: 400px;
+    top: 10px;
+  }
+}
+@keyframes fall_1 {
+  0% {
+    top: 10px;
+    left: 397px;
+    opacity: 0;
+  }
+  20%{
+      opacity: 1;
+  }
+  100%{
+    top: 310px;
+    left: 495px;
+    opacity: 0;
+  }
+}
+@keyframes fall_2 {
+    0% {
+      top: 55px;
+      right: 40px;
+      opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+      top: 310px;
+      right: 20px;
+      opacity: 0;
+    }
+  }
+@keyframes fall_3 {
+    0% {
+      top: -20px;
+      right: 540px;
+      opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+      top: 310px;
+      right: 620px;
+      opacity: 0;
+    }
+  }
+@keyframes fall_4 {
+    0% {
+      top: -20px;
+      left: 200px;
+      opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+      top: 310px;
+      left: 100px;
+      opacity: 0;
+    }
+  }
+body {
+  margin: 0;
+  background-image: url("one.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hbee {
+  width: 50px;
+  height: 50px;
+  animation: go 10s ease-in-out 0s 1;
+  position: absolute;
+  left: 650px;
+  top: 40px;
+}
+#right {
+  width: 50px;
+  height: 50px;
+  transform: rotatey(180deg);
+  animation: come 10s ease-in-out 0s 1;
+  position: absolute;
+  right: 400px;
+  top: 10px;
+  z-index: 5;
+}
+#leaf_1 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  animation: fall_1 5s ease-in-out 0s infinite;
+  left: 397px;
+  top: 10px;
+}
+#leaf_2 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  animation: fall_1 5s ease-in-out 1s infinite;
+  left: 397px;
+  top: 10px;
+}
+#leaf_3 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 40px;
+  top: 55px;
+  animation: fall_2 5s ease-in-out 1s infinite;
+
+}
+#leaf_4 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  animation:  fall_3 5s ease-in-out 1s infinite;
+  top: -20px;
+      right: 540px;
+}
+#leaf_5{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  animation:  fall_4 5s ease-in-out 1s infinite;
+  top: -20px;
+      left: 200px;
+}
+
+
